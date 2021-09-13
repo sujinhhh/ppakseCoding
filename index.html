@@ -3,9 +3,299 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
+  <style>
+    :root {
+      --font-font-family: "Nanum Gothic", sans-serif;
+      --div-padding: 10px;
+      --div-margin: 10px;
+      --beige-color: wheat;
+    }
+    body {
+      margin: 0 auto;
+      background-color: var(--black-color, rgb(208, 154, 255));
+      font-family: "Single Day", cursive;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+    }
+    header > h1 {
+      color: white;
+      font-size: 3rem;
+    }
+    nav {
+      display: flex;
+      margin: 0 auto;
+      width: 100%;
+      justify-content: space-between;
+      color: rgb(255, 0, 162);
+      padding-top: 2rem;
+      max-width: 1200px;
+    }
+    .left {
+      background-color: palevioletred;
+    }
+    .nav-item-container {
+    }
+    .nav-item {
+      background-color: paleturquoise;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      z-index: 0;
+      box-shadow: 6px 5px 16px 3px rgba(248, 245, 250, 0.536);
+    }
+    .nav-item > h2 {
+      text-align: center;
+    }
+    .nav-item:hover {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .contents-box {
+      width: 600px;
+      height: 300px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem;
+    }
+    .bg {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .granma {
+      background-image: url(./img/granma.png);
+    }
+    .daddy {
+      background-image: url(./img/daddy.png);
+    }
+    .mommy {
+      background-image: url(./img/mommy.png);
+    }
+    .me {
+      background-image: url(./img/me.png);
+    }
+
+    .lily {
+      background-image: url(./img/lily.png);
+    }
+    .jk {
+      background-image: url(./img/jk.png);
+    }
+    .uncle {
+      background-image: url(./img/uncle.png);
+    }
+    .sophia {
+      background-image: url(./img/sophia.png);
+    }
+
+    /* 내용 ======================>  ======================>*/
+    .gradmma {
+      background-color: wheat;
+    }
+    [data-youtube] {
+      position: relative;
+      cursor: pointer;
+    }
+    [data-youtube]:hover::after {
+      background-image: url("./img/youtube.png");
+      background-size: 200px 200px;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      content: "버럭!!";
+      left: -20%;
+      right: -100%;
+      font-size: 20px;
+      top: 0;
+    }
+    .father {
+      background-color: rgb(101, 141, 241);
+    }
+
+    .kakao {
+      width: 300px;
+    }
+    main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+
+      font-family: var(--font-font-family);
+    }
+    footer div:nth-child(2n) {
+      background-color: rebeccapurple;
+    }
+    .footer01 {
+      background-color: rgb(163, 84, 153);
+
+      padding: var(--div-margin);
+    }
+    .footer02 {
+      background-color: rgb(116, 237, 235);
+      padding: var(--div-margin);
+    }
+    .required::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+    }
+    .required::after {
+      content: "*";
+      color: red;
+    }
+    [data-tooltip] {
+      position: relative;
+    }
+    [data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin-top: 5px;
+      padding: 5;
+      color: aliceblue;
+      background-color: blueviolet;
+    }
+    .footer03 {
+      background-color: rgb(245, 238, 28);
+
+      padding: var(--div-margin);
+    }
+    .footer04 {
+      background-color: rgb(28, 245, 151);
+
+      padding: var(--div-margin);
+    }
+
+    @media (max-width: 576px) {
+      nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        justify-items: center;
+      }
+      .nav-item-container {
+        position: relative;
+      }
+      .nav-item {
+        width: 70px;
+        height: 70px;
+      }
+      .nav-item:hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-20px);
+        transform: scale(0.7);
+        z-index: 1000;
+      }
+    }
+    @media (orientation: portrait) {
+      /* 세로로 길때 */
+      /* (orientation: landscape) 가로로길때   */
+    }
+  </style>
   <body>
-    <h1>test</h1>
+    <header>
+      <h1>우리 가족은요...</h1>
+    </header>
+    <nav>
+      <div class="nav-item-container" id="sungja">
+        <div class="nav-item bg granma"></div>
+        <h2>할머니</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg daddy"></div>
+        <h2>아빠</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg mommy"></div>
+        <h2>엄마</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg me"></div>
+        <h2>새람</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg lily"></div>
+        <h2>새하</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg jk"></div>
+        <h2>서진</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg uncle"></div>
+        <h2>삼촌</h2>
+      </div>
+      <div class="nav-item-container">
+        <div class="nav-item bg sophia"></div>
+        <h2>이모</h2>
+      </div>
+    </nav>
+    <main>
+      <div class="contents">
+        <div class="contents-box gradmma" data-youtube id="gr">
+          <h1>우리할머니는 너튜브를 좋아합니다</h1>
+          <p>우리 할머니는 화를 많이 내십니다</p>
+          <p>우리 할머니는 요리를 잘 하나?</p>
+          <p>우리 할머니는 바나나를 잘 파십니다.</p>
+        </div>
+        <div class="contents-box father" id="fa">
+          <h1>우리 아빠는 영어 선생님이십니다.</h1>
+          <p>우리 아빠는 좋은 대학교를 나왔습니다</p>
+          <p>우리 아빠는 공부를 잘 합니다.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <div class="footer01">
+        <img
+          class="kakao"
+          src="https://mblogthumb-phinf.pstatic.net/MjAxODA4MjlfMTg0/MDAxNTM1NTA4MTQwNjY5.an3X1CpOo4ZrFsSPA6s8P8eYiBIe-hFU6WeVE9vhv9Qg.SSDtF-gMG9qHOgKm1kXg3pizbckqKO2j7c9kPllN82sg.GIF.chur7878/GIFT_GIF.gif?type=w800"
+          alt=""
+        />
+      </div> -->
+      <div class="footer02">
+        <label class="required">Name</label>
+        <input type="text" required />
+        <button data-tooltip="떠나요 둘이서">Submit Form</button>
+      </div>
+      <div class="footer03">푸터 투</div>
+      <div class="footer04"></div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
