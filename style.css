@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --font-font-family: "Nanum Gothic", sans-serif;
+    --div-padding: 10px;
+    --div-margin: 10px;
+    --beige-color: wheat;
+  }
+
+  html {
+    /* height: 100%; */
+    font-size: 16px;
+    color: rgb(29, 28, 28);
+
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--black-color, rgb(208, 154, 255));
+    font-family: "Single Day", cursive;
+    transition: all 0.5s ease-in-out;
+    border: 5px dashed red;
+  }
+
+  a,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  .maxWidth {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+  fieldset {
+    margin: 3rem;
+    border: 2px solid rgb(225, 202, 248);
+    text-shadow: -2px -2px 5px white, 2px 2px 5px rgba(52, 52, 53, 0.5);
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  legend {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    color: aliceblue;
+  }
+
+  nav {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+    color: rgb(255, 0, 162);
+    padding-top: 2rem;
+    max-width: 1200px;
+    position: relative;
+  }
+  .nav__burger-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      margin: 0 10px;
+  }
+.nav__burger,
+.nav__burger::before,
+.nav__burger::after{
+    opacity: 1;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+  .left {
+    background-color: palevioletred;
+  }
+
+  .nav-item-container {}
+
+  .nav-item {
+    background-color: paleturquoise;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 0;
+    box-shadow: 6px 5px 16px 3px rgba(248, 245, 250, 0.536);
+  }
+
+  .nav-item>a {
+    text-align: center;
+  }
+
+  .nav-item:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .contents-box {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+  }
+  .contents-box:hover{
+    background-color: blueviolet;
+  }
+
+  .contents-box:nth-child(2n) {
+    background-color: rgb(118, 145, 252);
+  }
+  .contents-box:nth-child(2n):hover{
+    opacity: 0.3;
+    background-color: blueviolet;
+  }
+
+  .contents-box:nth-child(2n-1) {
+    background-color: rgb(245, 202, 128);
+  }
+  .contents-box:nth-child(2n-1):hover {
+    background-color: indianred;
+  }
+
+  .bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .granma {
+    background-image: url(./img/granma.png);
+  }
+
+  .daddy {
+    background-image: url(./img/daddy.png);
+  }
+
+  .mommy {
+    background-image: url(./img/mommy.png);
+  }
+
+  .me {
+    background-image: url(./img/me.png);
+  }
+
+  .lily {
+    background-image: url(./img/lily.png);
+  }
+
+  .jk {
+    background-image: url(./img/jk.png);
+  }
+
+  .uncle {
+    background-image: url(./img/uncle.png);
+  }
+
+  .sophia {
+    background-image: url(./img/sophia.png);
+  }
+
+  /* 내용 ======================>  ======================>*/
+
+  [data-youtube] {
+    position: relative;
+    cursor: pointer;
+  }
+
+  [data-youtube]:hover::after {
+    background-image: url("./img/youtube.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: "버럭!!";
+    left: -20%;
+    right: -100%;
+    font-size: 20px;
+    top: 0;
+  }
+
+  .kakao {
+    width: 300px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-font-family);
+  }
+
+  footer div:nth-child(2n) {
+    background-color: rebeccapurple;
+  }
+
+  .footer01 {
+    background-color: rgb(163, 84, 153);
+
+    padding: var(--div-margin);
+  }
+
+  .footer02 {
+    background-color: rgb(116, 237, 235);
+    padding: var(--div-margin);
+  }
+
+  .required::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
+  .required::after {
+    content: "*";
+    color: red;
+  }
+
+  [data-tooltip] {
+    position: relative;
+  }
+
+  [data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    padding: 5;
+    color: aliceblue;
+    background-color: blueviolet;
+  }
+
+  [data-seram] {
+    position: relative;
+    cursor: pointer;
+  }
+
+  [data-seram]:hover::after {
+    background-image: url("./img/youtube.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: "버럭!!";
+    left: -20%;
+    right: -100%;
+    font-size: 20px;
+    top: 0;
+  }
+
+
+  .footer03 {
+    background-color: rgb(245, 238, 28);
+
+    padding: var(--div-margin);
+  }
+
+  .footer04 {
+    background-color: rgb(28, 245, 151);
+
+    padding: var(--div-margin);
+  }
+
+  @media (max-width: 576px) {
+    nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 auto;
+      justify-items: center;
+    }
+
+    .nav-item-container {
+      position: relative;
+    }
+
+    .nav-item {
+      width: 70px;
+      height: 70px;
+    }
+
+    .nav-item:hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-20px);
+      transform: scale(0.7);
+      z-index: 1000;
+    }
+  }
+
+  @media (orientation: portrait) {
+    /* 세로로 길때 */
+    /* (orientation: landscape) 가로로길때   */
+  }
