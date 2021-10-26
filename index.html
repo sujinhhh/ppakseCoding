@@ -13,58 +13,60 @@
 
 <body>
   <fieldset>
-    <legend>우리 가족은요...</legend>
 
-    <nav class="nav">
+    <legend>
+      <span>우리 가족은요...</span>
       <div class="nav__burger-btn">
         <div class="nav__burger"></div>
       </div>
+    </legend>
+    <nav class="nav">
       <ul class="nav__list">
         <li class="nav-item-container" id="sungja">
-          <a href="">
+          <a href="#gr">
             <div class="nav-item bg granma"></div>
             <h2>할머니</h2>
           </a>
 
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#fa">
             <div class="nav-item bg daddy"></div>
             <h2>아빠</h2>
           </a>
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#ma">
             <div class="nav-item bg mommy"></div>
             <h2>엄마</h2>
           </a>
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#qa">
             <div class="nav-item bg me"></div>
             <h2>새람</h2>
           </a>
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#li">
             <div class="nav-item bg lily"></div>
             <h2>새하</h2>
           </a>
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#jk">
             <div class="nav-item bg jk"></div>
             <h2>서진</h2>
           </a>
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#un">
             <div class="nav-item bg uncle"></div>
             <h2>삼촌</h2>
           </a>
         </li>
         <li class="nav-item-container">
-          <a href="">
+          <a href="#an">
             <div class="nav-item bg sophia"></div>
             <h2>이모</h2>
           </a>
@@ -72,46 +74,49 @@
       </ul>
     </nav>
   </fieldset>
-  <main>
+  <main id='menu' class="menu">
+   
+ 
     <div class="contents">
-      <div class="contents-box gradmma" data-youtube id="gr">
-        <h1>우리할머니는 너튜브를 좋아합니다</h1>
+      <div class="contents-box gradmma" data-youtube='gr' id="gr">
+        <h1 class="title">우리할머니는 너튜브를 좋아합니다</h1>
         <p>우리 할머니는 화를 많이 내십니다</p>
         <p>우리 할머니는 요리를 잘 하나?</p>
         <p>우리 할머니는 바나나를 잘 파십니다.</p>
+
       </div>
-      <div class="contents-box father" id="fa">
-        <h1>우리 아빠는 영어 선생님이십니다.</h1>
+      <div class="contents-box father" data-youtube='da' id="fa">
+        <h1 class="title">우리 아빠는 영어 선생님이십니다.</h1>
         <p>우리 아빠는 좋은 대학교를 나왔습니다</p>
         <p>우리 아빠는 공부를 잘 합니다.</p>
       </div>
-      <div class="contents-box father" id="fa">
-        <h1>우리 엄마는 수영을 잘합니다.</h1>
+      <div class="contents-box father" data-youtube='ma' id="ma">
+        <h1 class="title">우리 엄마는 수영을 잘합니다.</h1>
         <p>우리 엄마는 요리를 잘 합니다.</p>
         <p>우리 엄마는 어깨가 넓습니다.</p>
       </div>
-      <div class="contents-box father" data-seram id="fa">
-        <h1>나 새람이는 코에 피지가 있습니다</h1>
+      <div class="contents-box father" data-youtube='qa' id="qa">
+        <h1 class="title">나 새람이는 코에 피지가 있습니다</h1>
         <p>나는 모기에 잘 물립니다</p>
         <p>나는 bts보다 삼촌이 더 좋습니다</p>
       </div>
-      <div class="contents-box father" id="fa">
-        <h1>새하는 미술을 잘합니다. </h1>
+      <div class="contents-box father" data-youtube='li' id="li">
+        <h1 class="title">새하는 미술을 잘합니다. </h1>
         <p>새하는 줄넘기를 잘 합니다.</p>
         <p>새하는 고집이 있습니다.</p>
       </div>
-      <div class="contents-box father" id="fa">
-        <h1>서진이는 춤을 잘춥니다. </h1>
+      <div class="contents-box father" data-youtube='jk' id="jk">
+        <h1 class="title">서진이는 춤을 잘춥니다. </h1>
         <p>서진이는 잘난체가 심합니다.</p>
         <p>서진이는 성격이 느끼합니다.</p>
       </div>
-      <div class="contents-box father" id="fa">
-        <h1>삼촌은 잘난체가 심합니다.</h1>
+      <div class="contents-box father" data-youtube='un' id="un">
+        <h1 class="title">삼촌은 잘난체가 심합니다.</h1>
         <p>삼촌은 본인피셜 방탄 정국과 닮았다고 주장합니다. </p>
         <p>삼촌은 요리를 잘합니다.</p>
       </div>
-      <div class="contents-box father" id="fa">
-        <h1>이모는 캐나다에 삽니다.</h1>
+      <div class="contents-box father" data-youtube='an' id="an">
+        <h1 class="title"> 이모는 캐나다에 삽니다.</h1>
         <p>이모는 할머니 피셜 이모가 그림을 잘 그립니다. </p>
         <p>이모는 영어를 잘 합니다.</p>
       </div>
@@ -132,7 +137,7 @@
       <input type="text" required />
       <button data-tooltip="떠나요 둘이서">Submit Form</button>
     </div>
-    <div class="footer03">푸터 투</div>
+    <div class="footer03">&copy; <span id="year"></span></div>
     <div class="footer04"></div>
   </footer>
 
