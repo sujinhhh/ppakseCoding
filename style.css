@@ -298,13 +298,13 @@ nav {
   top: 0;
 }
 [data-youtube="da"]:hover::after {
-  background-image: url("./img/youtube.png");
+  background-image: url("./img/apa.png");
   background-size: 200px 200px;
   background-repeat: no-repeat;
   position: absolute;
   width: 300px;
   height: 300px;
-  content: "아빠 천재!!";
+  content: "설비 천재!!";
   left: -20%;
   right: -100%;
   font-size: 20px;
@@ -323,6 +323,32 @@ nav {
   font-size: 20px;
   top: -100px;
 }
+[data-youtube="ma"]:hover::before {
+  background-image: url("img/mom.png");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  content: "수영 천재!!";
+  left: -20%;
+  right: -100%;
+  font-size: 20px;
+  top: -100px;
+}
+[data-youtube="li"]:hover::before {
+  background-image: url("img/seha.png");
+  background-size: 200px 300px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  content: "미술 천재!!";
+  left: -20%;
+  right: -100%;
+  font-size: 20px;
+  top: -100px;
+}
 [data-youtube="un"]:hover::before {
   background-image: url("img/un.png");
   background-size: 200px 200px;
@@ -331,6 +357,32 @@ nav {
   width: 300px;
   height: 100%;
   content: "키다리 아저씨!!";
+  left: -20%;
+  right: -100%;
+  font-size: 20px;
+  top: -100px;
+}
+[data-youtube="jk"]:hover::before {
+  background-image: url("img/jk2.png");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  content: "춤 천재 !!";
+  left: -20%;
+  right: -100%;
+  font-size: 20px;
+  top: -100px;
+}
+[data-youtube="an"]:hover::before {
+  background-image: url("img/imo.png");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  content: "코딩 천재 !!";
   left: -20%;
   right: -100%;
   font-size: 20px;
